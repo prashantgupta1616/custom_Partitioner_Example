@@ -1,0 +1,38 @@
+We will use custom partitioning in MapReduce program to find the maximum salary 
+in each gender and three age categories: less than 20, 20 to 50, greater than 50.
+
+
+Input Format:
+name<tab>age<tab>gender<tab>salary
+
+Rajee<tab>23<tab>female<tab>5000
+Rama<tab>34<tab>male<tab>7000
+Arjun<tab>67<tab>male<tab>900000
+Keerthi<tab>38<tab>female<tab>100000
+Kishore<tab>25<tab>male<tab>23000
+Daniel<tab>78<tab>male<tab>7600
+James<tab>34<tab>male<tab>86000
+Alex<tab>52<tab>male<tab>6900
+Nancy<tab>7<tab>female<tab>9800
+Adam<tab>9<tab>male<tab>3700
+Jacob<tab>7<tab>male<tab>2390
+Mary<tab>6<tab>female<tab>9300
+Clara<tab>87<tab>female<tab>72000
+Monica<tab>56<tab>female<tab>92000
+
+
+Output:
+
+Partition – 0: (this partition contains the maximum salaries for each gender whose age is less than 20)
+Nancy<tab>age- 7<tab>female<tab>salary-9800
+Adam<tab>age- 9<tab>male<tab>salary-3700
+
+Partition – 1: (this partition contains the maximum salaries for each gender whose age is between 20 and 50)
+
+Kristine<tab>age- 38<tab>female<tab>salary-100000
+Bob<tab>age- 34<tab>male<tab>salary-86000
+
+Partition – 2: (this partition contains the maximum salaries for each gender whose age is greater than 50)
+
+Monica<tab>age- 56<tab>female<tab>salary-92000
+Chris<tab>age- 67<tab>male<tab>salary-900000
